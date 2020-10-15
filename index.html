@@ -5,13 +5,221 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pop by the Polls</title>
     <!-- link to style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- link to script.js - make sure to defer -->
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <!-- nav element goes here -->
 
+    <nav>
+      <a href="./index.html"
+        ><img id="logo" src="./images/logo.jpg" alt="Logo"
+      /></a>
+
+      <img src="./icons/menu.svg" id="hamburger" alt="Menu" />
+      <div id="overlay"></div>
+
+      <ul id="menu">
+        <li><a href="#issues">Issues</a></li>
+        <li><a href="#candidate">Candidate</a></li>
+        <li><a href="#polling-place">Polling Place</a></li>
+        <li><a href="#sample-ballot">Sample Ballot</a></li>
+      </ul>
+    </nav>
+
     <!-- main element goes here -->
 
+    <main>
+      <article>
+        <!-- header of article goes here-->
+
+        <header class="grid-1-2">
+          <section id="issues">
+            <h1>Pop by the Polls</h1>
+            <p>
+              This is a short research article for the 2020 General Election. It
+              covers four issues currently being discussed, a candidate running
+              for President of the United States, a polling place, and a sample
+              ballot.
+            </p>
+            <a href="#" title="Read About the Issues">Read More</a>
+          </section>
+
+          <figure>
+            <img src="./images/north-carolina.svg" alt="North Carolina" />
+          </figure>
+        </header>
+        <!--issues section-->
+        <section>
+          <header>
+            <h2>Issues</h2>
+            <p>
+              These are the issues that voters and candidates are discussing
+              this election season.
+            </p>
+          </header>
+          <section class="grid-1-4">
+            <!--first issue-->
+            <article class="card">
+              <figure>
+                <img src="./images/earth.jpg" alt="Issue One" />
+              </figure>
+              <section>
+                <h3>Climate Change</h3>
+                <p>
+                  Earth’s average temperature has been increasing due to
+                  pollution.
+                </p>
+              </section>
+            </article>
+            <!--second issue-->
+            <article class="card">
+              <figure>
+                <img src="./images/gay-marriage.jpg" alt="Issue Two" />
+              </figure>
+              <section>
+                <h3>Gay Marriage</h3>
+                <p>
+                  The legalization of same sex marriage is debated between
+                  republican and democratic candidates.
+                </p>
+              </section>
+            </article>
+            <!--third issue-->
+            <article class="card">
+              <figure>
+                <img src="./images/equal-pay.jpg" alt="Issue Three" />
+              </figure>
+              <section>
+                <h3>Equal Pay</h3>
+                <p>
+                  Should employers be required to pay men and women the same
+                  salary for the same job?
+                </p>
+              </section>
+            </article>
+            <!--fourth issue-->
+            <article class="card">
+              <figure>
+                <img src="./images/COVID-Mask.jpg" alt="Issue Four" />
+              </figure>
+              <section>
+                <h3>COVID Mask Mandate</h3>
+                <p>
+                  Should the federal government require people to wear face
+                  masks in public during the COVID pandemic?
+                </p>
+              </section>
+            </article>
+          </section>
+        </section>
+        <!--candidates section-->
+        <section id="candidate">
+          <header>
+            <h2>Candidate</h2>
+            <p>
+              This is a person that is running to be nominated as a general
+              election candidate for President of the United States.
+            </p>
+          </header>
+          <section>
+            <!--candidate card-->
+            <article class="card grid-1-2">
+              <figure>
+                <img
+                  src="./images/Joe-Biden-and-Kamala-Harris.jpg"
+                  alt="Candidate"
+                />
+              </figure>
+              <section>
+                <h3>Joe Biden</h3>
+                <p>
+                  Joe Biden is an American politician who served as the 47th
+                  vice president of the United States from 2009 to 2017
+                  alongside President Barack Obama. Joe Biden is the 2020
+                  Democratic Presidential nominee, running against current
+                  President Donald Trump. Joe Biden is running alongside Senator
+                  Kamala Harris.
+                </p>
+              </section>
+            </article>
+          </section>
+        </section>
+        <!--pollling place section-->
+        <section id="polling-place">
+          <header>
+            <h2>Polling Place</h2>
+            <p>
+              This is a location that voters can visit to cast a ballot for the
+              candidates they prefer.
+            </p>
+          </header>
+          <section>
+            <!--polling card-->
+            <article class="card grid-1-2">
+              <figure>
+                <img src="./images/herbert-young-map.PNG" alt="Polling Place" />
+              </figure>
+              <section>
+                <h3>Herbert C Young Community Center</h3>
+                <p>
+                  The Herbert C Young Community Center is located at 101
+                  Wilkinson Ave, Cary, North Carolina. One-stop early voting for
+                  the November 2020 general runs Oct 15 - 31, 2020.
+                </p>
+              </section>
+            </article>
+          </section>
+        </section>
+        <!-- sample ballot-->
+        <section id="sample-ballot">
+          <header>
+            <h2>Sample Ballot</h2>
+            <p>
+              This is a document that potential voters can use to practice
+              voting and to preview which candidates are up for election.
+            </p>
+          </header>
+          <section>
+            <!--sample ballot card-->
+            <article class="card grid-1-2">
+              <figure>
+                <img src="./images/sample-ballot.PNG" alt="Sample Ballot" />
+              </figure>
+              <section>
+                <h3>Wake County, North Carolina Sample Ballot</h3>
+                <p>
+                  Depicted on the left is a Sample Ballot for residents of Wake
+                  County, North Carolina. Your ballot will defer based on where
+                  you reside. In addition to the Election of Federal Offices,
+                  State Elections are also being held at the same time. The
+                  ballot lists the many different positions which elections are
+                  being held for, such as the State Attorney General, The State
+                  Governor, The State Supreme Court Chief Justice Seat, and many
+                  more. On page two of this sample ballot, you can vote for the
+                  District Office, County Office, and Nonpartisan Office
+                  representatives.
+                </p>
+              </section>
+            </article>
+          </section>
+        </section>
+      </article>
+    </main>
     <!-- footer element goes here -->
+
+    <footer>
+      <p>
+        This website was made by
+        <a href="./../../">Neerja Shah</a>
+        in
+        <a href="https://mejo187.com">Foundations of Interactive Media</a>
+        at
+        <a href="https://unc.edu"
+          >The University of North Carolina at Chapel Hill.</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
